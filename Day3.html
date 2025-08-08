@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Club Registration</title>
+</head>
+<body>
+    <center>
+  <h2>Music Club Registration Form</h2>
+  </center>
+  <hr>
+  <form action="/submit" method="post">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <!-- Interests -->
+    <label>Music Interests:</label><br>
+    <input type="checkbox" id="vocal" name="interest" value="Vocal">
+    <label for="vocal">Vocal</label><br>
+    <input type="checkbox" id="instrumental" name="interest" value="Instrumental">
+    <label for="instrumental">Instrumental</label><br>
+    <input type="checkbox" id="dj" name="interest" value="DJ">
+    <label for="dj">DJ</label>
+    <br><br>
+
+    <!-- Department Dropdown -->
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+      <option value="">--Select--</option>
+      <option value="cse">CSE</option>
+      <option value="ece">ECE</option>
+      <option value="mech">MECH</option>
+      <option value="civil">CIVIL</option>
+    </select>
+    <br><br>
+
+    <!-- About -->
+    <label for="about">Why do you want to join?</label><br>
+    <textarea id="about" name="about" rows="4" cols="40" placeholder="Write something..."></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
